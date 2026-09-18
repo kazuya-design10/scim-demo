@@ -16,7 +16,7 @@ async function load(){
             <td>${esc(u.payload.attribute || '-')}</td>
             <td><span class="pill ${u.active?'active':'inactive'}">${u.active?'有効':'無効'}</span></td>
             <td>${dt(u.updated_at)}</td>
-            <td><button class="view" data-i="${i}">JSON</button></td>
+            
             </tr>`
         ).join('');
     
