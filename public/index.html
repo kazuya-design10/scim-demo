@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <header><div><span class="badge">APP B</span><h1>SCIM同期先デモアプリ</h1><p>Auth0 Event Streamsから連携されたユーザー情報</p></div><div id="status" class="status">接続確認中</div></header>
+  <header><div><span class="badge">SCIMサーバ</span><h1>SCIM同期先デモアプリ</h1><p>Auth0 Event Streamsから連携されたユーザー情報</p></div><div id="status" class="status">接続確認中</div></header>
   <main>
     <section class="summary">
       <div><span>同期ユーザー</span><strong id="count">0</strong></div>
@@ -16,7 +16,16 @@
     </section>
     <section class="panel">
       <div class="panel-title"><h2>ユーザー一覧</h2><span>SCIM externalIdでAuth0ユーザーと紐付け</span></div>
-      <div class="table-wrap"><table><thead><tr><th>表示名</th><th>ユーザー名</th><th>externalId</th><th>状態</th><th>更新日時</th><th>受信データ</th></tr></thead><tbody id="users"></tbody></table></div>
+      <div class="table-wrap"><table><thead><tr>
+        <th>表示名</th>
+        <th>ユーザー名</th>
+        <th>externalId</th>
+        <th>カスタム属性</th>
+        <th>状態</th>
+        <th>更新日時</th>
+        <th>受信データ</th>
+      </tr></thead>
+      <tbody id="users"></tbody></table></div>
       <div id="empty" class="empty">まだユーザーが同期されていません。</div>
     </section>
     <section class="panel"><div class="panel-title"><h2>直近のSCIM処理</h2><span>デモ時の動作確認用</span></div><div id="logs" class="logs"></div></section>
